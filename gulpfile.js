@@ -5,7 +5,8 @@ var gulp = require('gulp');
 // REQUIRED MODULES //
 var sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    browserSync = require('browser-sync');
 
 // end of REQUIRED MODULES //
 
@@ -24,8 +25,7 @@ gulp.task('sass', function(){
       .pipe(sass().on('error', sass.logError))
   //send to the destination as a css file to (one dot = current folder, two dots = parent folder) ./lib/css
   //dont know why this is needed for this one task tho... because the watch task further down works only without it...
-      .pipe(gulp.dest('./lib/css'))
-      .pipe(livereload());
+      .pipe(gulp.dest('./lib/css'));
 });
 
 
@@ -33,11 +33,17 @@ gulp.task('sass', function(){
 
 // GULP WATCH TASKS
 
+gulp.task('sass-watch', ['sass'], browserSync.reload);
+
 gulp.task('watch', function(){
 
-  var server = livereload();
+  browserSync({
+    server: {
+      baseDir: 'lib/'
+    }
+  })
 
-  gulp.watch('lib/scss/*.scss', ['sass']);
+  gulp.watch('lib/scss/*.scss', ['sass-watch']);
 
 });
 
