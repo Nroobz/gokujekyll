@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background: #3d566e; }
+  background: #151515; }
 
 * {
   transition: all .3s; }
@@ -24,7 +24,7 @@ body {
     .wrapper .goku .goku-text {
       margin: 0 auto;
       text-align: center;
-      background: black;
+      border: 2px solid #272727;
       color: white;
       width: 380px;
       padding: 10px;
@@ -62,19 +62,19 @@ body {
         width: 200px;
         height: 200px;
         border-radius: 100%;
-        background: red; }
+        border: 2px solid #272727; }
       .wrapper ul li .break {
         display: inline-block;
-        width: 245px;
+        width: 237px;
         height: 4px;
-        background: red;
+        background: #272727;
         position: absolute;
         margin-top: 100px; }
     .wrapper ul li:hover .text {
       display: block; }
 
 .left-victims {
-  border-right: 4px solid red;
+  border-right: 4px solid #272727;
   padding-top: 150px !important; }
   .left-victims .image, .left-victims .text {
     float: left; }
