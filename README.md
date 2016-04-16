@@ -20,3 +20,8 @@ current dev envi
 --------------
 
 - browsersync works, now to add more features!
+
+16/04/16
+----------
+
+- added all the ish and dish and ting (layout, colours and images)

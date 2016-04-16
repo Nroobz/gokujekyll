@@ -2,9 +2,6 @@ body {
   font-family: sans-serif;
   background: #151515; }
 
-* {
-  transition: all .3s; }
-
 .wrapper {
   width: 900px;
   margin: 0 auto; }
@@ -62,16 +59,19 @@ body {
         width: 200px;
         height: 200px;
         border-radius: 100%;
-        border: 2px solid #272727; }
-      .wrapper ul li .break {
-        display: inline-block;
-        width: 237px;
-        height: 4px;
-        background: #272727;
-        position: absolute;
-        margin-top: 100px; }
-    .wrapper ul li:hover .text {
-      display: block; }
+        border: 2px solid #272727;
+        transition: all .3s; }
+    .wrapper ul .break {
+      display: inline-block;
+      width: 237px;
+      height: 4px;
+      background: #272727;
+      position: absolute;
+      margin-top: 100px; }
+  .wrapper li:hover .text {
+    display: block; }
+  .wrapper li:hover .image {
+    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)); }
 
 .left-victims {
   border-right: 4px solid #272727;
@@ -88,3 +88,9 @@ body {
 .right-victims .text {
   margin-left: 170px;
   padding: 10px; }
+
+.pterodactyl {
+  background-image: url(../img/pterodactyl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }

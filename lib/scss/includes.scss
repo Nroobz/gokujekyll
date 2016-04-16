@@ -11,9 +11,7 @@ body {
   background: $primary;
 }
 
-*{
-  transition: all .3s;
-}
+
 
 .wrapper {
   width: 900px;
@@ -85,6 +83,8 @@ body {
         height: 200px;
         border-radius: 100%;
         border: 2px solid $gray;
+        transition: all .3s;
+      }
       }
       .break {
         display: inline-block;
@@ -101,6 +101,10 @@ body {
       .text {
         display: block;
       }
+      .image {
+        background: linear-gradient(rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    )
     }
 
 
@@ -127,4 +131,14 @@ body {
     margin-left: 170px;
     padding:10px;
   }
+}
+
+// images
+
+
+.pterodactyl {
+  background-image: url(../img/pterodactyl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
