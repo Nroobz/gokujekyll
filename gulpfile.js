@@ -5,7 +5,7 @@ var gulp = require('gulp');
 // REQUIRED MODULES //
 var sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
-    livereload = require('gulp-livereload'),
+    //livereload = require('gulp-livereload'),//
     browserSync = require('browser-sync');
 
 // end of REQUIRED MODULES //

@@ -1,11 +1,111 @@
-$primary-color: #ed1;
-$x-large: 50px;
-
 body {
-  background-color: $primary-color;
-  width: percentage(5/7);
+  font-family: sans-serif;
+  background: darkgray;
 }
 
-h1 {
-  font-size: $x-large;
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+
+  .goku {
+    width: 100%;
+    min-height: 230px;
+
+    .goku-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      background: red;
+      margin: 0 auto;
+    }
+    .goku-text {
+      margin: 0 auto;
+      text-align: center;
+      background: black;
+      color: white;
+      width: 380px;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 1px;
+      h1, p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    width: 49%;
+    display: inline-block;
+    float: left;
+    .text {
+      position: absolute;
+      margin-top: 70px;
+      min-width: 150px;
+      background: #000;
+      color: #fff;
+      line-height: 1.5em;
+      display: none;
+
+
+      h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    li {
+      list-style: none;
+      .image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background: red;
+      }
+      .image:before{
+        content: '';
+        border: 1px solid red;
+        transform: rotate(90degrees);
+
+      }
+    }
+
+    li:hover {
+      .text {
+        display: block;
+      }
+    }
+
+
+  }
+}
+
+// float
+.left-victims{
+  border-right: 4px solid red;
+  padding-top: 150px !important;
+  .image, .text{
+    float: left;
+  }
+  .text{
+    margin-left: 70px;
+    padding:10px;
+  }
+}
+.right-victims {
+  .image, .text {
+    float: right;
+  }
+  .text{
+    margin-left: 170px;
+    padding:10px;
+  }
 }
