@@ -21,7 +21,11 @@ body {
       width: 200px;
       height: 200px;
       border-radius: 100%;
-      background: red;
+      background: gray;
+      background-image: url(../img/songoku.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
       margin: 0 auto;
     }
     .goku-text {
