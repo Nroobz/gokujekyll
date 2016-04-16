@@ -2,6 +2,9 @@ body {
   font-family: sans-serif;
   background: darkgray; }
 
+* {
+  transition: all .3s; }
+
 .wrapper {
   width: 900px;
   margin: 0 auto; }
@@ -56,10 +59,13 @@ body {
         height: 200px;
         border-radius: 100%;
         background: red; }
-      .wrapper ul li .image:before {
-        content: '';
-        border: 1px solid red;
-        transform: rotate(90degrees); }
+      .wrapper ul li .break {
+        display: inline-block;
+        width: 245px;
+        height: 4px;
+        background: red;
+        position: absolute;
+        margin-top: 100px; }
     .wrapper ul li:hover .text {
       display: block; }
 

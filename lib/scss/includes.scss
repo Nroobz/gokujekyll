@@ -3,6 +3,10 @@ body {
   background: darkgray;
 }
 
+*{
+  transition: all .3s;
+}
+
 .wrapper {
   width: 900px;
   margin: 0 auto;
@@ -70,10 +74,13 @@ body {
         border-radius: 100%;
         background: red;
       }
-      .image:before{
-        content: '';
-        border: 1px solid red;
-        transform: rotate(90degrees);
+      .break {
+        display: inline-block;
+        width: 245px;
+        height: 4px;
+        background: red;
+        position: absolute;
+        margin-top: 100px;
 
       }
     }
