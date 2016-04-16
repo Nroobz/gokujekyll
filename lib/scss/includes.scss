@@ -22,12 +22,17 @@ body {
       width: 200px;
       height: 200px;
       border-radius: 100%;
+      background: gray;
+      background-image: url(../img/songoku.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
       margin: 0 auto;
     }
     .goku-text {
       margin: 0 auto;
       text-align: center;
-      background: $gray;
+      border: 2px solid $gray;
       color: white;
       width: 380px;
       padding: 10px;
@@ -74,11 +79,11 @@ body {
         width: 200px;
         height: 200px;
         border-radius: 100%;
-        background: $gray;
+        border: 2px solid $gray;
       }
       .break {
         display: inline-block;
-        width: 245px;
+        width: 237px;
         height: 4px;
         background: $gray;
         position: absolute;
